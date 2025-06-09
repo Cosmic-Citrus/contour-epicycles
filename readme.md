@@ -4,7 +4,7 @@ The purpose of this code is to make cool art using math.
 
 ## Description
 
-Given the path to an image, one can view the contour outline of an image. 
+Given the path to an image, one can view the contour outline of the image. 
 
 
 <img title="" src="data/genie.png" alt="example-original_genie_image" width="329" data-align="center">
