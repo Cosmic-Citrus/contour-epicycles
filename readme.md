@@ -57,4 +57,4 @@ The input parameter `maximum_order` is required for indexing the discrete sums s
 
 ## License
 
-This project is licensed under the Apache License License - see the LICENSE.md file for details.
+This project is licensed under the Apache License - see the LICENSE file for details.
