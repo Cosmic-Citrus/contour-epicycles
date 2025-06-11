@@ -16,7 +16,7 @@ Given the path to an image, one can view the contour outline of the image.
 One can also view the epicycles of multiple connected circles tracing along the discrete Fourier transform (DFT) of the contour. 
 ![example-genie-epicycles](output/example_02-epicycles/genie-Epicycles.gif)
 
-The input parameter `maximum_order` is required for indexing the discrete sums such that the number of circles is equal to `2 * maximum_order + 1` (negative indices + zero-index + positive indices). This DFT approximation to the contour becomes more accurate as `maximum_order` $\rightarrow$ $\infty$ - though `maximum_order=10`  should be adequate for simple shapes and `maximum_order=20` should be adequate for more complicated shapes. One can also view how the discrete Fourier transform varies as a function of  `maximum_order`.
+The input parameter `maximum_order` is required for indexing the discrete sums such that the number of circles is equal to `2 * maximum_order + 1` (negative indices + zero-index + positive indices). This DFT approximation to the contour becomes more accurate as `maximum_order` $\rightarrow$ $\infty$, though `maximum_order=10`  should be adequate for simple shapes and `maximum_order=20` should be adequate for more complicated shapes. One can also view how the discrete Fourier transform varies as a function of  `maximum_order`.
 ![example-genie_variable_order](output/example_03-variable_order/genie-VariableOrder.gif)
 
 ## Getting Started
