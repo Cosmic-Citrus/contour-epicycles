@@ -1,16 +1,23 @@
 # Repo:    contour-epicycles
 
-The purpose of this code is to make cool art using math. 
+The purpose of this code is to use math to make art. 
 
 ## Description
 
-Given the path to an image, one can view the contour outline of the image. 
+Despite being incorrect, Aristotle's view of the geocentric universe, in which all celestial bodies with the exception of Earth - including the Sun, moon, and other planets - revolve around Earth; this view prevailed over human civilization for over a millenium. The geocentric model falls apart upon closer examination; one aspect that the ancient Greeks noticed was that some planets exhibited apparent retrograde motion - in which it appears from the perspective of the viewer that the observed planet is moving backwards in the nightsky. To account for apparent retrograde motion, the ancient Greeks refined their geocentric model by adding epicycles. The geocentric model can be made to match observations by adding a sufficient number of epicycles in the same way that any $y=f(x)$ path can be parameterized as a sum of sines (or cosines). 
+
+
+
+Given the path to an image, this code leverages `scikit-image` to generate the contour outline of the image. In the `data` directory, there are images of characters from ancient Egyptian mythology, a few cartoon guitars, a guitar, and the symbol of the number pi ($\pi$). 
 
 
 <img title="" src="data/genie.png" alt="example-original_genie_image" width="329" data-align="center">
 
 
 <img title="" src="output/example_01-contours/genie-Contour.png" alt="example-genie_contour" data-align="center">
+
+
+ADD DFT HERE
 
 
 One can also view the epicycles of multiple connected circles tracing along the discrete Fourier transform (DFT) of the contour. 
