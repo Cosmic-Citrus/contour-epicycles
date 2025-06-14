@@ -131,4 +131,4 @@ The discrete version of the Fourier transform is the discrete Fourier transform 
 
 ## License
 
-This project is licensed under the Apache License - see the LICENSE file for details.
+This project is licensed under the Apache License - see the LICENSE file for details. 
