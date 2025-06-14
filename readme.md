@@ -54,7 +54,7 @@ The ($x$, $y$) coordinates form a closed path (or contour) from which epicycles 
 <img title="" src="output/example_01-contours/genie-Contour.png" alt="example-genie_contour" data-align="center">
 
 
-To generate the epicycles, we consider the contour to start at $\theta=0$ and end at $\theta=2 \pi$ - moving counter-clockwise; this monotonically increasing value of $\theta$ can be analogous to time $t$. To be clear, these are discrete (as opposed to continuous) steps; there are an equal number of values of $t$ as there are of ($x$, $y$) coordinates. The complex value of $z$ at some value $t$ in-between two consecutive steps ($t_{j} < t < t_{j+1}$) are obtained by interpolation; I will refer to this interpolation function as $f$.
+To generate the epicycles, we consider the contour to start at $\theta=0$ and end at $\theta=2 \pi$ moving counter-clockwise; this monotonically increasing value of $\theta$ can be analogous to time $t$. To be clear, these are discrete (as opposed to continuous) steps; there are an equal number of values of $t$ as there are of ($x$, $y$) coordinates. The complex value of $z$ at some value $t$ in-between two consecutive steps ($t_{j} < t < t_{j+1}$) are obtained by interpolation; I will refer to this interpolation function as $f$.
 
 Any periodic function $f$ with period $L$ (meaning $f$ is complex and integrable) can be expressed as a Fourier series
 
