@@ -32,6 +32,7 @@ Euler's formula states that
 
 $e^{i \theta} = \cos \theta + i \sin \theta$
 
+
 We can use this to transform $z$ into polar form
 
 $z = x + iy \implies |z| = \sqrt{(x + iy) (x - iy)} = \sqrt{x^2 + y^2}$
@@ -51,7 +52,16 @@ The ($x$, $y$) coordinates form a closed path (or contour) from which epicycles 
 <img title="" src="output/example_01-contours/genie-Contour.png" alt="example-genie_contour" data-align="center">
 
 
-ADD DFT HERE
+To generate the epicycles, we consider the contour to start at $\theta=0$ and end at $\theta=2 \pi$ - moving counter-clockwise; this monotonically increasing value of $\theta$ can be analogous to time $t$. To be clear, these are discrete (as opposed to continuous) steps; there are an equal number of values of $t$ as there are of ($x$, $y$) coordinates. The complex value of $z$ at some value $t$ in-between two consecutive steps ($t_{j} < t < t_{j+1}$) are be obtained by interpolation; I will refer to this interpolation function as $f$.
+
+The Fourier transform (in continuous space) of a function $f$ - where $f$ is both complex and integrable - is given by
+
+$\hat{f}(\xi) = \int_{-\infty}^{\infty} f(x) e^{-i 2 \pi \xi x} dx$
+
+Since our steps our discrete, this code uses the discrete Fourier transform (DFT), which is given by
+
+
+
 
 
 One can also view the epicycles of multiple connected circles tracing along the discrete Fourier transform (DFT) of the contour. 
