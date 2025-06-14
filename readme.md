@@ -10,20 +10,46 @@ The ancient Greeks noticed that some celestial bodies exhibited [apparent retrog
 
 The concept of complex numbers is import to understand Fourier series. A complex number can be thought of as a vector containing a real component and imaginary component.
 
-$z = a + bi$
+$z = x + iy$
 
-  $\implies Re(z) = a$
+  $\implies Re(z) = x$
   
-  $\implies Im(z) = b$
+  $\implies Im(z) = y$
+
+The $xy$-plane can be transformed via polar coordinates:
+
+$x = r \cos \theta$
+
+$y = r \sin \theta$
+
+where
+
+$r$ is the radius of the circle from the origin to the point ($x$, $y$)
+
+$\theta$ is the angle between the line segment from the origin to the point ($x$, $y$) with the line segment on the $x$-axis
+
+Euler's formula states that
+
+$e^{i \theta} = \cos \theta + i \sin \theta$
+
+We can use this to transform $z$ into polar form
+
+$z = x + iy$
+
+$z = |z| (\cos \theta + i \sin \theta)$
+
+$z = |z| e^{i \theta}$
+
+where 
+
+$|z| = \sqrt{(x + iy) (x - iy)} = \sqrt{x^2 + y^2}$
+
+The ($x$, $y$) coordinates form a closed path (or contour) from which epicycles are obtained. Given the path to an image file, this code leverages `scikit-image` to generate the contour outline. The `data` directory contains images of characters from ancient Egyptian mythology, a few characters from cartoons, a guitar, and the symbol of the number pi ($\pi$). Let us take the image of Genie from Disney's Aladdin as an example.
 
 
-
-
-
-To see how this works, this code places epicycles around a closed path or contour. This code leverages `scikit-image` to generate the contour outline of a given image. The `data` directory contains images of characters from ancient Egyptian mythology, a few characters from cartoons, a guitar, and the symbol of the number pi ($\pi$). Let us take the image of Genie from Disney's Aladdin as an example.
-
-
-<img title="" src="data/genie.png" alt="example-original_genie_image" width="329" data-align="center">
+<div align="center">
+  <img src="data/genie.png" alt="example-original_genie_image" width="327" />
+</div>
 
 
 <img title="" src="output/example_01-contours/genie-Contour.png" alt="example-genie_contour" data-align="center">
