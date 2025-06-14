@@ -46,11 +46,6 @@ $z = |z| e^{i \theta}$
 The ($x$, $y$) coordinates form a closed path (or contour) from which epicycles are obtained. Given the path to an image file, this code leverages `scikit-image` to generate the contour outline. The `data` directory contains images of characters from ancient Egyptian mythology, a few characters from cartoons, a guitar, and the symbol of the number pi ($\pi$). Let us take the image of Genie from Disney's Aladdin as an example.
 
 
-<div align="center">
-  <img src="data/genie.png" alt="example-original_genie_image" width="327" />
-</div>
-
-
 <img title="" src="output/example_01-contours/genie-Contour.png" alt="example-genie_contour" data-align="center">
 
 
