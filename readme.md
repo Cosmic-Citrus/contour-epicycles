@@ -6,6 +6,10 @@ The purpose of this code is to use math to make art.
 
 Most people today agree that Sun is the center of our Solar System - and that the Earth revolves around the Sun in an orbit that is slightly elliptical - but this perception was different in ancient times. Aristotle was a vociferous proponent of the geocentric model, in which the Earth was center of the Universe and all other celestial bodies - including the Sun - revolved around the Earth in orbits that were perfectly circular. Despite being an incorrect description of reality, the geocentric model prevailed for over a millenium. The ancient Greeks noticed that some celestial bodies exhibited [apparent retrograde motion](https://en.wikipedia.org/wiki/Apparent_retrograde_motion), in which it [appears]((https://upload.wikimedia.org/wikipedia/commons/7/70/Apparent_retrograde_motion_of_Mars_in_2003.gif)) that the [celestial body is moving backwards](https://upload.wikimedia.org/wikipedia/commons/f/f0/The_astronomical_explanation_for_Mercury_retrograde.webm) in the nightsky as viewed from the perspective of an observer on Earth. The ancient Greeks incorporated [epicycles](https://upload.wikimedia.org/wikipedia/commons/f/fb/Epicycle_and_deferent.svg) - circles upon circles - into their geocentric model to account for apparent retrograde motion. With a sufficient number of epicycles, one can make any geocentric model fit. Similarly, any $y=f(x)$ path can be parameterized as the [sum of sines (or cosines)](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Fourier_series_and_transform.gif/640px-Fourier_series_and_transform.gif) - this is the essence of Fourier series. 
 
+
+![example-genie-epicycles](output/example_02-epicycles/genie-Epicycles.gif)
+
+
 The concept of complex numbers is import to understand Fourier series. A complex number can be thought of as a vector containing a real component and imaginary component.
 
 $z = x + iy$
@@ -88,11 +92,8 @@ To be clear, $F(n\omega_{0})$ is the Fourier transform of $f(t)$ over one period
 
 $F(\omega) \approx \sum_{-m}^{m} f(t) e^{-i \omega t} dt$
 
-The discrete version of the Fourier transform is the discrete Fourier transform (DFT). A given value of $m$ corresponds to $2m+1$ terms in the summation. A finite value of $m$ means that this is only an approximation, but this approximation becomes exact as $m \rightarrow \infty$. A reasonable approximation can be obtained with $10 \leq m \leq 30$ for most shapes. The animation of epicycles below is obtained using a value of $m=100$
+The discrete version of the Fourier transform is the discrete Fourier transform (DFT). A given value of $m$ corresponds to $2m+1$ terms in the summation. A finite value of $m$ means that this is only an approximation, but this approximation becomes exact as $m \rightarrow \infty$. A reasonable approximation can be obtained with $10 \leq m \leq 30$ for most shapes. The animation below shows how the approximation improves as $m$ increases up to $m=100$.
 
-![example-genie-epicycles](output/example_02-epicycles/genie-Epicycles.gif)
-
-The animation below shows how the approximation improves as $m$ increases.
 
 ![example-genie_variable_order](output/example_03-variable_order/genie-VariableOrder.gif)
 
