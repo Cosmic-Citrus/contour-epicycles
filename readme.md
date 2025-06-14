@@ -68,7 +68,7 @@ $c_{n} = \frac{1}{L}\int_{0}^{L} f(t) e^{-i n \omega{0} t} dt$ are complex Fouri
 
 These complex Fourier coefficients determine the complex amplitude of the frequency component $n \omega_{0}$. For a non-periodic function, the Fourier transform is given by
 
-$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i \omega t} dt$
+$F(\omega) = \frac{1}{2 \pi} \int_{-\infty}^{\infty} f(t) e^{-i \omega t} dt$
 
 The inverse Fourier transform, which can reconstruct the time-domain signal $f(t)$ from the frequency-domain signal $F(\omega)$, is given by
 
