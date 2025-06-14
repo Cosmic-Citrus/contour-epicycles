@@ -9,12 +9,7 @@ The geocentric model is a model of the Universe in which the Earth is the center
 The ancient Greeks noticed that some celestial bodies exhibited [apparent retrograde motion](https://en.wikipedia.org/wiki/Apparent_retrograde_motion), in which it [appears]((https://upload.wikimedia.org/wikipedia/commons/7/70/Apparent_retrograde_motion_of_Mars_in_2003.gif)) that the [celestial body is moving backwards](https://upload.wikimedia.org/wikipedia/commons/f/f0/The_astronomical_explanation_for_Mercury_retrograde.webm) in the nightsky as viewed from the perspective of an observer on Earth. The ancient Greeks incorporated [epicycles](https://upload.wikimedia.org/wikipedia/commons/f/fb/Epicycle_and_deferent.svg) - circles upon circles - into their geocentric model to account for apparent retrograde motion. With a sufficient number of epicycles, one can make any geocentric model fit. Similarly, any $y=f(x)$ path can be parameterized as the [sum of sines (or cosines)](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Fourier_series_and_transform.gif/640px-Fourier_series_and_transform.gif) - this is the essence of Fourier series. 
 
 
-
-
-
-
-
-Given the path to an image, this code leverages `scikit-image` to generate the contour outline of the image. In the `data` directory, there are images of characters from ancient Egyptian mythology, a few cartoon guitars, a guitar, and the symbol of the number pi ($\pi$). 
+To see how this works, this code places epicycles around a closed path or contour. This code leverages `scikit-image` to generate the contour outline of a given image. The `data` directory contains images of characters from ancient Egyptian mythology, a few characters from cartoons, a guitar, and the symbol of the number pi ($\pi$). Let us take the image of Genie from Disney's Aladdin as an example.
 
 
 <img title="" src="data/genie.png" alt="example-original_genie_image" width="329" data-align="center">
