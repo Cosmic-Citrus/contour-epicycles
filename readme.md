@@ -34,15 +34,11 @@ $e^{i \theta} = \cos \theta + i \sin \theta$
 
 We can use this to transform $z$ into polar form
 
-$z = x + iy$
+$z = x + iy \implies |z| = \sqrt{(x + iy) (x - iy)} = \sqrt{x^2 + y^2}$
 
 $z = |z| (\cos \theta + i \sin \theta)$
 
 $z = |z| e^{i \theta}$
-
-where 
-
-$|z| = \sqrt{(x + iy) (x - iy)} = \sqrt{x^2 + y^2}$
 
 The ($x$, $y$) coordinates form a closed path (or contour) from which epicycles are obtained. Given the path to an image file, this code leverages `scikit-image` to generate the contour outline. The `data` directory contains images of characters from ancient Egyptian mythology, a few characters from cartoons, a guitar, and the symbol of the number pi ($\pi$). Let us take the image of Genie from Disney's Aladdin as an example.
 
