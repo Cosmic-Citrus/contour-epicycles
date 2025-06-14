@@ -4,7 +4,13 @@ The purpose of this code is to use math to make art.
 
 ## Description
 
-Despite being incorrect, Aristotle's view of the geocentric universe, in which all celestial bodies with the exception of Earth - including the Sun, moon, and other planets - revolve around Earth; this view prevailed over human civilization for over a millenium. The geocentric model falls apart upon closer examination; one aspect that the ancient Greeks noticed was that some planets exhibited apparent retrograde motion - in which it appears from the perspective of the viewer that the observed planet is moving backwards in the nightsky. To account for apparent retrograde motion, the ancient Greeks refined their geocentric model by adding epicycles. The geocentric model can be made to match observations by adding a sufficient number of epicycles in the same way that any $y=f(x)$ path can be parameterized as a sum of sines (or cosines) - this is the essence of Fourier series. 
+The geocentric model is a model of the Universe in which the Earth is the center of the Universe such that all other celestial bodies revolve around the Earth. Aristotle was a vociferous proponent of the geocentric model; Even though we know today that the Earth revolves around the Sun in an elliptical orbit of low eccentricity, the geocentric model prevailed for more than a millenium. 
+
+The ancient Greeks noticed that some celestial bodies exhibited [apparent retrograde motion](https://en.wikipedia.org/wiki/Apparent_retrograde_motion), in which it [appears]((https://upload.wikimedia.org/wikipedia/commons/7/70/Apparent_retrograde_motion_of_Mars_in_2003.gif)) that the [celestial body is moving backwards](https://upload.wikimedia.org/wikipedia/commons/f/f0/The_astronomical_explanation_for_Mercury_retrograde.webm) in the nightsky as viewed from the perspective of an observer on Earth. The ancient Greeks incorporated [epicycles](https://upload.wikimedia.org/wikipedia/commons/f/fb/Epicycle_and_deferent.svg) into their geocentric model to account for apparent retrograde motion. With a sufficient number of epicycles, one can make any geocentric model fit. Similarly, any $y=f(x)$ path can be parameterized as the [sum of sines (or cosines)](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Fourier_series_and_transform.gif/640px-Fourier_series_and_transform.gif) - this is the essence of Fourier series. 
+
+
+
+
 
 
 
