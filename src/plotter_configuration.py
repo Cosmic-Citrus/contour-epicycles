@@ -56,7 +56,7 @@ class BaseContourEpicyclesViewer(BasePlotterConfiguration):
 
 	@staticmethod
 	def get_dft_label(contour_epicycles):
-		label = "DFT of Image\n" + r"$2 ({:,}) + 1 = {:,}$ Circles".format(
+		label = "DFT\n" + r"$2 ({:,}) + 1 = {:,}$ Circles".format(
 			contour_epicycles.maximum_order,
 			contour_epicycles.number_circles)
 		return label
@@ -418,7 +418,7 @@ class ContourEpicyclesViewer(BaseContourEpicyclesViewer):
 				ax=ax,
 				contour_color=contour_color,
 				label=contour_label)
-		dft_label = "DFT of Image"
+		dft_label = "DFT"
 		dft_handle, = ax.plot(
 			list(),
 			list(),
