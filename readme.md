@@ -88,7 +88,7 @@ This means that the Fourier transform of a periodic function is discrete and tha
 
 To be clear, $F(n\omega_{0})$ is the Fourier transform of $f(t)$ over one period $L$. Because it is not feasible to compute an infinite number of Fourier coefficients $c_{n}$, a cut-off value $m$ (represented in the code as `maximum_order`) is chosen such that the 
 
-$F(\omega) \approx \sum_{-m}^{m} f(t) e^{-i \omega t} dt$
+$F(\omega) \approx \sum_{-m}^{m} f(t) e^{-i \omega t} \Delta t$
 
 The discrete version of the Fourier transform is the discrete Fourier transform (DFT). A given value of $m$ corresponds to $2m+1$ terms in the summation. A finite value of $m$ means that this is only an approximation, but this approximation becomes exact as $m \rightarrow \infty$. A reasonable approximation can be obtained with $10 \leq m \leq 30$ for most shapes. The animation below shows how the approximation improves as $m$ increases up to $m=100$.
 
