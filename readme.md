@@ -62,7 +62,7 @@ where
 
 $\omega_{0} \equiv \frac{2 \pi}{L}$ is the fundamental angular frequency
 
-$c_{n} = \frac{1}{L}\int_{0}^{L} f(t) e^{-i n \omega{0} t} dt$ are complex Fourier coefficients over one period
+$c_{n} = \frac{1}{L}\int_{0}^{L} f(t) e^{-i n \omega_{0} t} dt$ are complex Fourier coefficients over one period
 
 These complex Fourier coefficients determine the complex amplitude of the frequency component $n \omega_{0}$. For a non-periodic function, the Fourier transform is given by
 
@@ -84,7 +84,7 @@ $\delta(\omega - n\omega_{0}) \rightarrow \infty$ if $\omega - n\omega_{0} = 0$
 
 $\int_{-\infty}^{\infty} \delta(x) dx = 1$
 
-This means that the Fourier transform of a periodic function is discrete and that the Fourier coefficients are scaled samples of the Fourier transform at harmonic frequencies.
+This means that the Fourier coefficients are scaled samples of the Fourier transform at harmonic frequencies.
 
 To be clear, $F(n\omega_{0})$ is the Fourier transform of $f(t)$ over one period $L$. Because it is not feasible to compute an infinite number of Fourier coefficients $c_{n}$, a cut-off value $m$ (represented in the code as `maximum_order`) is chosen such that the 
 
